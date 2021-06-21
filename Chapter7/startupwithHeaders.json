@@ -1,0 +1,31 @@
+[
+  {
+    "description":"这是一个带header信息的post请求",
+    "request":
+    {
+      "uri":"/post/with/header",
+      "method":"post",
+      "headers":
+      {
+        "content-type":"application/json"
+      },
+      "json":{
+        "name":"wangxiaoli",
+        "age":"18"
+      }
+    },
+    "response":
+    {
+      "status":200,
+      "json":{
+        "wangxiaoli":"seccess",
+        "status":"1"
+      }
+    }
+  },
+  {
+    "description":"重定向到百度",
+    "request":{"uri":"/redirect"},
+    "redirectTo":"http://baidu.com"
+  }
+]

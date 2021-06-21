@@ -7,19 +7,23 @@ import org.testng.annotations.BeforeTest;
 
 public class SuiteConfig {
     @BeforeSuite
-    public void beforeSuite(){
+    public void beforeSuite()
+    {
         System.out.println("before suite运行啦");
     }
     @AfterSuite
-    public void aftersuite(){
+    public void aftersuite()
+    {
         System.out.println("after suite运行啦");
     }
     @BeforeTest
-    public void beforeTest(){
-        System.out.println("beforetest");
+    public void beforeTest()
+    {
+        System.out.println("beforetest方法");
     }
     @AfterTest
-    public void afterTest(){
-        System.out.println("aftertest");
+    public void afterTest()
+    {
+        System.out.println("aftertest方法");
     }
 }
